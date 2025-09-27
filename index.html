@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Srinadh Reddy Bhavanam | Astrophysics & Machine Learning</title>
+  <meta name="description" content="Astrophysics & ML researcher — Compton imaging (COSI), GRB localization, ML for Physical Sciences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="avatar" src="assets/img/avatar.svg" alt="Avatar" />
+        <div class="brand-text">
+          <h1 class="name">Srinadh Reddy Bhavanam</h1>
+          <p class="tagline">Astrophysics × Machine Learning • Compton Imaging (COSI) • GRB Localization • ML for Physical Sciences</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Hi — I’m Srinadh.</h2>
+        <p>
+          I build machine‑learning methods for high‑energy astrophysics: Compton telescope image reconstruction for NASA’s COSI mission,
+          GRB localization, and ML for large optical surveys. I care about reproducible, production‑ready science.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://ui.adsabs.harvard.edu/" target="_blank" rel="noopener">ADS</a>
+          <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://bsky.app/" target="_blank" rel="noopener">Bluesky</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About</h3>
+        <p>
+          I’m a researcher working at the intersection of astrophysics and machine learning. My recent work includes
+          high‑resolution Compton imaging for <strong>COSI</strong>, Deep Sets and SetTransformers for event‑set regression,
+          physics‑aware losses for angular targets, and robust, scalable pipelines (PyTorch, MLflow, Docker, HPC/Slurm).
+        </p>
+        <ul class="pill-list">
+          <li>Compton telescopes • COSI</li>
+          <li>GRB localization</li>
+          <li>Self‑supervised & contrastive learning</li>
+          <li>MLOps & LLMOps</li>
+          <li>Optical survey artifact detection</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="container">
+        <h3>Research Highlights</h3>
+        <div class="grid two">
+          <div class="card">
+            <h4>ComptonNet‑v2: Direct Reconstruction</h4>
+            <p>
+              A direct reconstruction network for Compton cameras using set‑based encoders, angular embeddings,
+              and cosine/spherical losses. Includes uncertainty & calibration tooling.
+            </p>
+            <p><a class="text-link" href="#" target="_blank" rel="noopener">Paper (arXiv)</a> · <a class="text-link" href="#" target="_blank" rel="noopener">Code (GitHub)</a></p>
+          </div>
+          <div class="card">
+            <h4>DeepSets for GRB Localization</h4>
+            <p>
+              Event‑set regression from variable‑length Compton events to (l, b) using permutation‑invariant encoders,
+              vMF targets, and error‑aware evaluation (MAD/AE/RMS vs. event count).
+            </p>
+            <p><a class="text-link" href="#" target="_blank" rel="noopener">Notes</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3>Selected Projects</h3>
+        <div class="grid three">
+          <article class="project">
+            <img src="assets/img/ph-placeholder.svg" alt="Project image placeholder" />
+            <h4>ComptonNet</h4>
+            <p>Direct source reconstruction for Compton cameras; leverages discarded events to improve fidelity at low statistics.</p>
+            <p class="links">
+              <a href="#" target="_blank" rel="noopener">Code</a> · <a href="#" target="_blank" rel="noopener">Preprint</a>
+            </p>
+          </article>
+          <article class="project">
+            <img src="assets/img/ph-placeholder.svg" alt="Project image placeholder" />
+            <h4>AstroMAE (PyTorch)</h4>
+            <p>Masked autoencoding for SDSS images with redshift regression head; tutorial‑style code for students.</p>
+            <p class="links">
+              <a href="#" target="_blank" rel="noopener">Repo</a>
+            </p>
+          </article>
+          <article class="project">
+            <img src="assets/img/ph-placeholder.svg" alt="Project image placeholder" />
+            <h4>MargNet & AstroFormer</h4>
+            <p>Compact galaxy classification with imaging+photometry fusion; exploration of ViTs for faint objects.</p>
+            <p class="links">
+              <a href="#" target="_blank" rel="noopener">Paper</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section alt">
+      <div class="container">
+        <h3>Blog</h3>
+        <p>Short notes on ML for the physical sciences, Compton cameras, and teaching.</p>
+        <ul class="post-list">
+          <li><a href="blog/first-post.html">Hello, world: what I’m building this year</a> <span class="muted">— sample post</span></li>
+        </ul>
+        <p><a class="btn" href="blog/index.html">View all posts</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+          &nbsp;•&nbsp; GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">@yourusername</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Srinadh Reddy Bhavanam. Built with a lightweight, custom template. </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
